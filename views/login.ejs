@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paltract</title>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body>
+    
+    <section class="register">
+        <div class="logo">
+            <h1 ><i class="fa-solid fa-microchip"></i> Paltract</h1>
+        </div>
+        <h1 class="title">HEY THERE!</h1>
+        <p>You don't have your own account?</p>
+        <form action="/register" method="GET">
+            <button class="button registerButton" id="loginBtn" type="submit">CREATE ACCOUNT</button>
+        </form>
+    </section>
+    <section class="login">
+        <div class="inputDiv">
+            <h1>LOGIN</h1>
+            <form action="/register" method="POST">
+                <input name="email" class="input" type="email" placeholder="example@gmail.com" required>
+                <input name="password" type="password" class="input" placeholder="Password" required minlength="6">
+                <a href="#">Forgot Password?</a>
+                <br>
+                <div class="checkbox">
+                    <input type="checkbox" id="myCheckbox" name="forgot">
+                    <label for="myCheckbox">Keep me sign</label>
+                </div>
+                <button type="submit" class="button createAccountButton">LOGIN</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="https://kit.fontawesome.com/fa4d93c482.js" crossorigin="anonymous"></script>
+    <script type="module" src="../index.js"></script>
+    <script type="module" src="../public/scripts/script.js"></script>
+</body>
+</html>

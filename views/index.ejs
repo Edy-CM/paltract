@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paltract</title>
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+    <section class="register">
+        <div class="logo">
+            <h1><i class="fa-solid fa-microchip"></i> Paltract</h1>
+        </div>
+        <div class="inputDiv">
+            
+            <h1>CREATE ACCOUNT</h1>
+            <form action="/register" method="POST">
+                <div class="namesInput">
+                    <input name="name" class="input" type="text" placeholder="Name" required>
+                    <input name="lName" class="input" type="text" placeholder="L Name" required>
+                </div>
+                <input name="email" class="input" type="email" placeholder="example@gmail.com" required>
+                <input name="password" type="password" class="input" placeholder="Password" required minlength="6">
+                <input name="passwordConfirmation" type="password" class="input" placeholder="Password Confirmation" required minlength="6">
+                <% if (correctPasswords) { %>
+                    <h4 class="errorMessage"><i class="fa-solid fa-circle-exclamation"></i> Las contraseñas no coinciden.</h4>
+                <% } %>
+                <button type="submit" class="button createAccountButton">CREATE ACCOUNT</button>
+            </form>
+        </div>
+    </section>
+    <section class="login">
+        <h1>WELCOME BACK</h1>
+        <p>DO YOU ALREADY HAVE AN ACCOUNT?</p>
+        <form action="/login" method="GET">
+            <button class="button loginButton" id="loginBtn" type="submit">LOGIN</button>
+        </form>
+    </section>
+    <script src="https://kit.fontawesome.com/fa4d93c482.js" crossorigin="anonymous"></script>
+    <script type="module" src="../index.js"></script>
+    <script type="module" src="../public/scripts/script.js"></script>
+</body>
+</html>

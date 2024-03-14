@@ -1,0 +1,139 @@
+@font-face {
+    font-family: cascadiaCode;
+    src: url("./fonts/CascadiaCode.ttf") format('truetype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "cascadiaCode", sans-serif;
+    background-color: #ffaa01;
+}
+
+body{
+    display: flex;
+}
+.logo h1 { 
+    font-size: 3rem;
+    color: #f1faee;
+    padding: .5em 1em;
+}
+
+a{
+    color: #ffaa01;
+}
+
+.login {
+    padding: 0.5em 1em;
+    width: 50%;
+    height: 100%;
+    color: #f1faee;
+    background-color: #2f2f2f;
+}
+
+.namesInput {
+    display: flex;
+    gap: 2.5em;
+    margin-bottom: 1em;
+    justify-content: space-between;
+    margin-bottom: 0.15em;
+}
+
+.namesInput input {
+    width: 44%;
+}
+
+.input {
+    border-radius: 5px;
+    padding: 0.5em 2em;
+    font-size: 1rem;
+    width: 90%;
+    height: 30px;
+    margin-bottom: 1.5em;
+}
+
+.input::placeholder {
+    font-size: 1rem;
+}
+
+.inputDiv {
+    padding: 0em 2.5em;
+    margin-top: 23%;
+}
+
+.inputDiv h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.button{
+    display: block;
+    margin: 18px auto;
+    height: 45px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: #ffaa01;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 3px solid #f1faee;
+}
+
+.errorMessage{
+    color: red;
+    margin: 0;
+}
+
+.title{
+    font-size: 3rem;
+    color: #f1faee;
+    text-align: center;
+    margin: 15% 0 0 0;
+}
+
+.register p {
+    font-size: 1.3rem;
+    color: #f1faee;
+    text-align: center;
+    margin: 5% 0;
+}
+
+.register{
+    width: 50%;
+}
+
+.registerButton{
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+.checkbox input[type="checkbox"] {
+    display: none; /* Ocultar el checkbox original */
+}
+
+.checkbox{
+    margin-top: 1em;
+}
+
+.checkbox label {
+    cursor: pointer;
+    display: inline-flex; /* Mostrar la etiqueta como un contenedor flexible */
+    align-items: center; /* Alinear verticalmente los elementos */
+}
+
+.checkbox label::before {
+    content: '';
+    display: inline-block;
+    width: 16px; /* Ancho del checkbox */
+    height: 16px; /* Altura del checkbox */
+    margin-right: 10px; /* Espacio entre el checkbox y el texto */
+    border: 1px solid #aaa;
+    background-color: #fff;
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+    background-color: #ffaa01; /* Cambiar color de fondo cuando está marcado */
+    border-color: white; /* Cambiar color del borde cuando está marcado */
+}
